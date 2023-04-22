@@ -1,7 +1,14 @@
+import { Canvas } from "@react-three/fiber";
+import {Route, RouterProvider} from "react-router-dom";
+import {router} from "./route/route";
+import Layout from "./components/Layout";
+import Home from "./page/Home";
+
 const App = () => {
   return (
-    <div className='text-xl'>Appp</div>
-  )
-}
+    <RouterProvider router={router}/>
+     
+  );
+};
 
-export default App
+export default App;
